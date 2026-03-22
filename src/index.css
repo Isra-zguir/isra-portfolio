@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sand text-ink font-body;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-sun bg-clip-text text-transparent;
+  }
+
+  .bg-glow {
+    background: radial-gradient(
+      circle at 20% 20%,
+      rgba(14, 165, 168, 0.18),
+      transparent 40%
+    );
+  }
+
+  .bg-glow-secondary {
+    background: radial-gradient(
+      circle at 80% 10%,
+      rgba(245, 158, 11, 0.18),
+      transparent 42%
+    );
+  }
+}
